@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<head>
+    <title>LegacyTU1</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta property="og:title" content="mc-delta"> 
+    <meta property="og:description" content="A mod for Beta Minecraft."> 
+    <meta property="og:image" content="assets/logo.ico"> 
+    <meta property="og:url" content="https://recko.dev"> 
+    <meta property="og:type" content="website"> 
+    <title>LegacyTU1</title>
+</head>
+
+<style>
+    @font-face { font-family: Minecraft; src: url('minecraft.ttf'); }
+
+    .grid {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    html {
+        cursor: url("assets/cursor.png"), pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 2px 2px blue;
+    }
+
+    body {
+        background-image: url("assets/background-blurred.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        color: white;
+        font-family: Minecraft;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-size: clamp(1.375vw, 10px, 50px);
+        text-shadow: 2px 2px black;
+    }
+    
+    h1 {
+        position: relative;
+        text-align: center;
+    }
+</style>
+
+<h1 id="title" style="font-weight: normal; color: yellow;">
+Minecraft: LegacyTU1
+</h1>
+
+<h2 id="subtitle" style="
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    ">
+A Legacy Console Mod for Beta 1.6.6
+</h2>
+
+<div class="grid">
+
+<h2 id="instructionheader" style="
+    position: relative;
+    text-align: left;
+    font-weight: normal;
+    left: 5vw;
+    color: yellow;">
+Download available <a href="https://github.com/Reckobot/LegacyTU1/releases">here</a>!
+</h2>
+
+<h2 id="projectheader" style="
+    position: absolute;
+    text-align: right;
+    font-weight: normal;
+    color: yellow;
+    right: 5vw;">Features</h2>
+</div>
+
+<div class="grid">
+
+<h3 id="instructions" style="
+    position: relative;
+    text-align: left;
+    font-weight: normal;
+    left: 5vw;
+    width: 40vw;">
+
+Instructions:<br>
+- Download <a href="https://prismlauncher.org/">Prism</a> or <a href="https://multimc.org/">MultiMC</a><br>- Create instance of Beta 1.6.6<br>- Edit instance<br>- Go to version section<br>- Click "Add to Minecraft.jar"<br>- Select the zip file you downloaded<br>- Have fun!
+</h3>
+
+<h3 id="description" style="
+    position: absolute;
+    text-align: left;
+    font-weight: normal;
+    right: 5vw;
+    width: 35vw;
+    font-size: clamp(1.125vw, 10px, 50px);">Adds<br>
+  - A gamma slider<br>
+  - An adaptive translucency to the hotbar<br>
+  - An offset to the hotbar<br>
+  - An opacity slider for the hotbar translucency<br>
+  - A slider for the offset amount for the hotbar<br>
+  - A panorama to the title screen<br>
+  <br>
+Changes<br>
+  - The default background texture to cobblestone rather than dirt
+</h3>
+</div>
+
+<h2 id="copyright" style="
+    position: fixed;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    bottom: 4px;
+    left: 2vw;
+    ">
+©Reckobot 2025
+</h2>
+
+<h2 id="copyright" style="
+    position: fixed;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    bottom: 8px;
+    right: 2vw;
+    font-size: clamp(1.625vw, 10px, 50px);
+    ">
+Join the Discord server <a href="https://discord.com/invite/8WbzFSrhe4">here</a>!
+</h2>
+
+<script>
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function loadText(elmntid, interval){
+        let c = "";
+        let txt = document.getElementById(elmntid).innerHTML;
+        for (let i = 0; i < txt.length; i++){
+            c += (txt[i]);
+            document.getElementById(elmntid).innerHTML = c;
+            await sleep(interval);
+        }
+    }
+
+    async function loadPage(){
+        loadText("title", 25);
+        loadText("subtitle", 25);
+        loadText("projectheader", 25);
+        loadText("instructionheader", 1);
+        loadText("description", 1);
+        loadText("instructions", 1);
+    }
+
+    window.addEventListener("load", (event) => {
+        loadPage();
+    });
+</script>
