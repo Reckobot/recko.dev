@@ -3,10 +3,6 @@
     src: url(/fonts/minecraft.ttf) format('truetype'); /* url of the font */
 }
 
-:root {
-    --button-width: 62.5vmin;
-}
-
 html {
     overflow: hidden;
 }
@@ -33,19 +29,19 @@ button {
     color: white;
     text-shadow: 0.125em 0.125em #383838;
     font-family: 'Minecraft';
-    font-size: calc(var(--button-width, 500px) * 0.0375);
+    font-size: calc(62.5vmin * 0.0375);
     text-decoration: none;
-    padding-bottom: calc(var(--button-width, 500px) / 100);
+    padding-bottom: calc(62.5vmin / 100);
 
-    width: var(--button-width, 500px);
-    height: calc(var(--button-width, 500px) / 10);
+    width: 62.5vmin;
+    height: calc(62.5vmin / 10);
 
     background-image: url(/assets/button.png);
     background-size: cover;
     border: none;
 
     margin: auto;
-    margin-top: calc(var(--button-width, 500px) / 50);
+    margin-top: calc(calc(62.5vmin / 10) * 0.2);
 }
 
 button:hover {
