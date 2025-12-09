@@ -31,6 +31,7 @@ body {
 
 button {
     color: white;
+    text-shadow: 0.125em 0.125em #383838;
     font-family: 'Minecraft';
     font-size: calc(var(--button-width, 500px) * 0.0375);
     text-decoration: none;
