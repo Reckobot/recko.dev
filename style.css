@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(/fonts/minecraft.ttf) format('truetype'); /* url of the font */
+}
+
+:root {
+    --button-width: 62.5vmin;
+}
+
+html {
+    overflow: hidden;
+}
+
+iframe {
+    visibility: hidden;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body {
+    font-family: 'Minecraft';
+    color: white;
+
+    margin: auto;
+    text-align:center;
+}
+
+button {
+    color: white;
+    font-family: 'Minecraft';
+    font-size: calc(var(--button-width, 500px) * 0.0375);
+    text-decoration: none;
+    padding-bottom: calc(var(--button-width, 500px) / 100);
+
+    width: var(--button-width, 500px);
+    height: calc(var(--button-width, 500px) / 10);
+
+    background-image: url(/assets/button.png);
+    background-size: cover;
+    border: none;
+
+    margin: auto;
+    margin-top: calc(var(--button-width, 500px) / 50);
+}
+
+button:hover {
+    color: #FFFFA0;
+    background-image: url(/assets/button_hover.png);
+}

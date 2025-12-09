@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>recko.dev</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+
+        <link rel="preload" href="/assets/title.png" as="image"/>
+        <link rel="preload" href="/assets/button.png" as="image"/>
+        <link rel="preload" href="/assets/button_hover.png" as="image"/>
+        <link rel="preload" href="sfx/click.ogg" as="audio"/>
+    </head>
+
+    <body>
+        <div style=
+            "
+                margin-top: 5vh;
+                font-size: 10vmin;
+            ">
+            recko.dev
+        </div>
+        <br>
+
+        <a href="about.html" target="page">
+            <button onclick="window.parent.document.getElementById('click').play();"
+            style="margin-top: 15vh;">
+                About...
+        </button></a>
+        <br>
+        <a href="install.html" target="page">
+            <button onclick="window.parent.document.getElementById('click').play();">
+                Installation...
+        </button></a>
+        <br>
+        <a href="alphajam.html" target="page">
+            <button onclick="window.parent.document.getElementById('click').play();">
+                AlphaJam
+        </button></a>
+
+    </body>
+</html>

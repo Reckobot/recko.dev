@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<style>
+    html {
+            background-color: black;
+            background-image: url(/assets/background.png);
+            background-size: 5%;
+    }
+</style>
+
+<html>
+    <head>
+        <title>recko.dev</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+        <audio id="click" src="sfx/click.ogg" type="audio/ogg" preload="auto"></audio>
+        <link rel="preload" href="sfx/click.ogg" as="audio"/>
+    </head>
+
+    <body>
+        <iframe src="home.html" name="page" title="recko.dev" onload="this.style.visibility = 'visible';"></iframe>
+    </body>
+</html>

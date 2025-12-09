@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>recko.dev</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+
+        <link rel="preload" href="/assets/title.png" as="image"/>
+        <link rel="preload" href="/assets/button.png" as="image"/>
+        <link rel="preload" href="/assets/button_hover.png" as="image"/>
+        <link rel="preload" href="sfx/click.ogg" as="audio"/>
+    </head>
+
+    <body>
+        <div style="margin-top: 12.5vh; font-size: 3vmin; width: 50vw; text-align: left; margin-left: 25vw;">
+            <h3>About me</h3>
+            Hi I'm Recko, a nerdy 18 year old programmer.<br>
+            I do lots and lots of programming in my freetime,<br>
+            and my main outlet for said programming is minecraft.<br>
+            This website was made to show off my mods while also<br>
+            providing an easy way for people to find and play<br>
+            said mods. I hope you guys enjoy!
+        </div>
+        
+        <br>
+        
+        <a href="home.html" target="page">
+            <button onclick="window.parent.document.getElementById('click').play();"
+            style="position: fixed; bottom: calc(var(--button-width, 500px) / 40); left: calc(50vw - calc(var(--button-width, 500px) / 2))">
+                Done
+        </button></a>
+    </body>
+</html>

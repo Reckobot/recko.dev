@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>recko.dev</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+
+        <link rel="preload" href="/assets/title.png" as="image"/>
+        <link rel="preload" href="/assets/button.png" as="image"/>
+        <link rel="preload" href="/assets/button_hover.png" as="image"/>
+        <link rel="preload" href="sfx/click.ogg" as="audio"/>
+    </head>
+
+    <body>
+        <div style="margin-top: 12.5vh; font-size: 2.25vmin; width: 50vw; text-align: left; margin-left: 25vw;">
+            <h2>Summary</h2>
+            AlphaJam is a relatively small quality-of-life mod for Alpha 1.2.6
+            that has been made with no particular goal in mind other than to
+            improve the overall experience.
+            This mod does NOT alter the core game mechanics in any way except
+            for fixing major bugs present in the version, such as ore generation
+            and leaf decay.<br><br>
+            This mod is made for people who still want to play Alpha mostly as-is but with
+            some improvements.
+            Also this is NOT a recreation of legacy console edition. It has a few features from LCE, but that is not the primary goal.<br><br>
+
+            <span style="color: #FFFF00">
+                By the way, if you don't trust the download button, AlphaJam is also available on modrinth
+            </span>
+            <a href="https://modrinth.com/mod/alphajam">here</a>
+        </div>
+        <br>
+        <a>
+            <button onclick="window.parent.document.getElementById('click').play();"
+            style="margin-top: 4vh;">
+                Download
+        </button></a>
+        <br>
+        <a href="home.html" target="page">
+            <button onclick="window.parent.document.getElementById('click').play();"
+            style="position: fixed; bottom: calc(var(--button-width, 500px) / 40); left: calc(50vw - calc(var(--button-width, 500px) / 2))">
+                Done
+        </button></a>
+    </body>
+</html>
