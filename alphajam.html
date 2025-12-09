@@ -10,10 +10,13 @@
         <link rel="preload" href="/assets/button.png" as="image"/>
         <link rel="preload" href="/assets/button_hover.png" as="image"/>
         <link rel="preload" href="sfx/click.ogg" as="audio"/>
+
+        <audio id="pop" src="sfx/pop.ogg" type="audio/ogg" preload="auto"></audio>
+        <link rel="preload" href="sfx/pop.ogg" as="audio"/>
     </head>
 
     <body>
-        <div style="margin-top: 12.5vh; font-size: 2.25vmin; width: 50vw; text-align: left; margin-left: 25vw;">
+        <div style="margin-top: 12.5vh; font-size: 2.125vmin; width: 50vw; text-align: left; margin-left: 25vw;">
             <h2>Summary</h2>
             AlphaJam is a relatively small quality-of-life mod for Alpha 1.2.6
             that has been made with no particular goal in mind other than to
@@ -25,15 +28,21 @@
             some improvements.
             Also this is NOT a recreation of legacy console edition. It has a few features from LCE, but that is not the primary goal.<br><br>
 
-            <span style="color: #FFFF00">
+            <span style="color: #FFFFA0">
                 By the way, if you don't trust the download button, AlphaJam is also available on modrinth
             </span>
-            <a href="https://modrinth.com/mod/alphajam">here</a>
+            <a style="color: #e0e0ff" target="_blank" href="https://modrinth.com/mod/alphajam">here</a>.
         </div>
         <br>
-        <a>
-            <button onclick="window.parent.document.getElementById('click').play();"
-            style="margin-top: 4vh;">
+        <a href="files/alphajam/alphajam-v1.0.0.zip">
+            <button onclick="document.getElementById('pop').play();"
+            style=
+            "
+                margin-top: 4vh;
+                background-color: #a6ffa6;
+                background-blend-mode: multiply;
+                filter:brightness(125%);
+            ">
                 Download
         </button></a>
         <br>
